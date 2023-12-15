@@ -1,0 +1,45 @@
+@model Post
+
+@{
+    ViewData["Title"] = "Add Post";
+}
+
+<form asp-controller="Post" asp-action="Create" enctype="multipart/form-data" method="post" style="margin: 150px 0;box-shadow:0 0 5px rgba(0,0,0,0.2);padding:20px;">
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Author</label>
+    <input type="text" asp-for="Author" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+  </div>
+  <br>
+ <div class="form-group">
+    <label for="exampleFormControlSelect1">Category</label>
+    <select asp-for="Category" class="form-control" id="exampleFormControlSelect1">
+      <option value="">Select Category</option>
+      <option value="SPORT">SPORT</option>
+      <option value="BUSINESS">BUSINESS</option>
+      <option value="FOOD">FOOD</option>
+      <option value="TECH">TECH</option>
+      <option value="DESIGN">DESIGN</option>
+      <option value="TRAVEL">TRAVEL</option>
+    </select>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    <input type="text" asp-for="Title" class="form-control" id="exampleFormControlInput1" placeholder="Title">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Content</label>
+    <textarea class="form-control" asp-for="Content" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <br>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Upload Image</label>
+    <input type="file" name="file" class="form-control" id="exampleFormControlInput1">
+  </div>
+  <br>
+  
+  <input type="submit" class="btn btn-primary" value="Save Post">
+</form>
