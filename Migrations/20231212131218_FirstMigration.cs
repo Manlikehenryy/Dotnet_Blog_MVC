@@ -16,7 +16,7 @@ namespace mvc.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Author = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PostId = table.Column<string>(type: "int", nullable: false),
+                    PostId = table.Column<int>(type: "int", nullable: false),
                     Comment_ = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
