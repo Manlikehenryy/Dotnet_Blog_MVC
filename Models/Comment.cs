@@ -10,7 +10,7 @@ namespace mvc.Models
     {
         [Key]
         public int Id {get; set;}
-        public string? Author {get; set;}
+        public string Author {get; set;}
         [Required]
         public int PostId {get; set;}
         [Required]

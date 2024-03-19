@@ -2013,11 +2013,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\henry.mbamalu\\Documents\\Dotnet_Blog\\mvc\\mvc.csproj",
+      "projectUniqueName": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\mvc.csproj",
       "projectName": "mvc",
-      "projectPath": "c:\\Users\\henry.mbamalu\\Documents\\Dotnet_Blog\\mvc\\mvc.csproj",
+      "projectPath": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\mvc.csproj",
       "packagesPath": "C:\\Users\\henry.mbamalu\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\henry.mbamalu\\Documents\\Dotnet_Blog\\mvc\\obj\\",
+      "outputPath": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\henry.mbamalu\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3AvENFPauaGcgaS5a3LRnXaIC+EN4iNlixa78J0BtoipsZkeuGO75OLg0lZ/MHuZ+p/3Db+f3SX+XY/60umXiA==",
+  "dgSpecHash": "Mp07ZkYLTLIu8S7DySd9um0SLGcxQl+HRO05AoRtra5JTnF95mBI5zW28GWnnFyeVZvwHk6wr0YfOElL2fh/Cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_Blog\\mvc\\mvc.csproj",
+  "projectFilePath": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henry.mbamalu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\henry.mbamalu\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
