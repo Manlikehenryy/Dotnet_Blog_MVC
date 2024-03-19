@@ -35,7 +35,9 @@ namespace mvc.Controllers
                 return NotFound();
             }
 
-            IEnumerable<Comment> Comments = _db.Comments.FromSqlRaw($"SELECT * FROM dbo.Comments WHERE PostId = {Id}").ToList();
+            // IEnumerable<Comment> Comments = _db.Comments.FromSqlRaw($"SELECT * FROM dbo.Comments WHERE PostId = {Id}").ToList();
+            IEnumerable<Comment> Comments = _db.Comments.FromSqlRaw($"SELECT * FROM Comments WHERE PostId = {Id}").ToList();
+
             ViewData["Category"] = post.Category;
             ViewData["FilePath"] = post.FilePath;
             ViewData["Content"] = post.Content;

@@ -18,10 +18,10 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        IEnumerable<Post> Posts = _db.Posts.FromSqlRaw("SELECT * FROM dbo.Posts ORDER BY Id DESC").ToList();
-        // var i = Posts.Count();
-        
-        // ViewData["count"] = i;
+        // IEnumerable<Post> Posts = _db.Posts.FromSqlRaw("SELECT * FROM dbo.Posts ORDER BY Id DESC").ToList();
+        IEnumerable<Post> Posts = _db.Posts.FromSqlRaw("SELECT * FROM Posts ORDER BY Id DESC").ToList();
+
+   
 
         return View(Posts);
     }
