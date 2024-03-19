@@ -120,3 +120,5 @@ C:\Users\henry.mbamalu\Documents\Dotnet_blog_mvc\obj\Debug\net6.0\refint\mvc.dll
 C:\Users\henry.mbamalu\Documents\Dotnet_blog_mvc\obj\Debug\net6.0\mvc.pdb
 C:\Users\henry.mbamalu\Documents\Dotnet_blog_mvc\obj\Debug\net6.0\mvc.genruntimeconfig.cache
 C:\Users\henry.mbamalu\Documents\Dotnet_blog_mvc\obj\Debug\net6.0\ref\mvc.dll
+C:\Users\henry.mbamalu\Documents\Dotnet_blog_mvc\bin\Debug\net6.0\Npgsql.dll
+C:\Users\henry.mbamalu\Documents\Dotnet_blog_mvc\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
