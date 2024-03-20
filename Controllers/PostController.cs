@@ -53,7 +53,11 @@ namespace mvc.Controllers
         [ValidateAntiForgeryToken]
          public IActionResult SinglePost(int PostId, string Author, string Comment_){
            
-            _db.Comments.Add(
+           try
+           {
+             if (PostId != null || Author != null || Comment_ != null)
+             {
+                _db.Comments.Add(
                 new Comment{
                    PostId = PostId,
                    Author = Author,
@@ -64,12 +68,24 @@ namespace mvc.Controllers
             _db.SaveChanges();
 
             TempData["success"] = "Comment added successfully";
+             }
+
+             TempData["error"] = "Missing required field(s)";
+
             return RedirectToAction("SinglePost");
+           }
+           catch (Exception)
+           {
+            TempData["error"] = "Something went wrong, please try again later";
+            return RedirectToAction("SinglePost");
+           }
         }
+        
         public IActionResult Create()
         {
             return View();
         }
+
         public IActionResult Index(){
             // _db.Posts.FromSqlRaw("");
             // _db.Database.ExecuteSqlRaw("");
@@ -85,7 +101,17 @@ namespace mvc.Controllers
             try
             {
 
-            string UploadsFolder = Path.Combine(_webHost.WebRootPath, "uploads");
+            if (file == null)
+            {
+               TempData["error"] = "Upload an image";
+                return View(post); 
+            }
+           
+            
+            if (ModelState.IsValid)
+            {
+               
+               string UploadsFolder = Path.Combine(_webHost.WebRootPath, "uploads");
 
             if (!Directory.Exists(UploadsFolder))
             {
@@ -111,15 +137,18 @@ namespace mvc.Controllers
          
             _db.SaveChanges();
             TempData["success"] = "Post created successfully";
-
-            return View();
-
-        
+             
+             return RedirectToAction("Create");
             }
-            catch (Exception ex)
+
+             TempData["error"] = "Missing required field(s)";
+             return View(post);
+            }
+            catch (Exception e)
             {
-                ViewBag.ErrorMessage = "An error occurred while saving the post: " + ex.Message;
-                return View(post); // Assuming you have a view named "Create" for displaying the form
+                // e.Message
+                TempData["error"] = "Something went wrong, please try again later";
+                return View(post); 
             }
             
             

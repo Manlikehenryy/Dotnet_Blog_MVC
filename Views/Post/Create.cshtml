@@ -9,12 +9,13 @@
   <div class="form-group">
     <label for="exampleFormControlInput1">Author</label>
     <input type="text" asp-for="Author" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+    <span asp-validation-for="Author" class="text-danger"></span>
   </div>
   <br>
  <div class="form-group">
     <label for="exampleFormControlSelect1">Category</label>
     <select asp-for="Category" class="form-control" id="exampleFormControlSelect1">
-      <option value="">Select Category</option>
+      <option value="" selected>Select Category</option>
       <option value="SPORT">SPORT</option>
       <option value="BUSINESS">BUSINESS</option>
       <option value="FOOD">FOOD</option>
@@ -22,16 +23,19 @@
       <option value="DESIGN">DESIGN</option>
       <option value="TRAVEL">TRAVEL</option>
     </select>
+    <span asp-validation-for="Category" class="text-danger"></span>
   </div>
   <br>
   <div class="form-group">
     <label for="exampleFormControlInput1">Title</label>
     <input type="text" asp-for="Title" class="form-control" id="exampleFormControlInput1" placeholder="Title">
+    <span asp-validation-for="Title" class="text-danger"></span>
   </div>
   <br>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Content</label>
     <textarea class="form-control" asp-for="Content" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <span asp-validation-for="Content" class="text-danger"></span>
   </div>
   <br>
   
