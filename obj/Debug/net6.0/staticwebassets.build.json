@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vEujAzorgLiCP9i8OxS7CxCJLzjpLhEZnYXAFxPaNgQ=",
+  "Hash": "RMc5ROjTRpCZt2R8X3PSKnSR3V2BpJb0QuTGVpq/Eek=",
   "Source": "mvc",
   "BasePath": "_content/mvc",
   "Mode": "Default",
@@ -3026,6 +3026,40 @@
       "OriginalItemSpec": "wwwroot\\uploads\\person-7.jpg"
     },
     {
+      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-landscape-3.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/post-landscape-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\post-landscape-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-landscape-5.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/post-landscape-5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\post-landscape-5.jpg"
+    },
+    {
       "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-landscape-8.jpg",
       "SourceId": "mvc",
       "SourceType": "Discovered",
@@ -3041,6 +3075,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\post-landscape-8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-portrait-8.jpg",
+      "SourceId": "mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
+      "BasePath": "_content/mvc",
+      "RelativePath": "uploads/post-portrait-8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\post-portrait-8.jpg"
     },
     {
       "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-sq-2.jpg",
