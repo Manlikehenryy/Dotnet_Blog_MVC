@@ -6,18 +6,25 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-# Copy everything else and build
+# Copy everything else
 COPY . ./
-RUN dotnet publish -c Release -o out
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
+
+# Copy the built files from build-env
 COPY --from=build-env /app/out .
 
 # Copy the migration script
-COPY rundb-migrations.sh /app
-RUN chmod +x /app/rundb-migrations.sh
+COPY rundb-migrations.sh .
 
-# Set the script as the entry point
+# Grant execution permissions to the script
+RUN chmod +x rundb-migrations.sh
+
+# Run the migration script during container startup
+CMD ["/bin/bash", "rundb-migrations.sh"]
+
+# Set the entry point to start the ASP.NET Core application
 ENTRYPOINT ["dotnet", "mvc.dll"]
+
