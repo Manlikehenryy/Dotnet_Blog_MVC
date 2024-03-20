@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AGjunIX4Ft69JDiboXYMyMxAiQLcsdhrBmDawaetHBM=",
+  "Hash": "vEujAzorgLiCP9i8OxS7CxCJLzjpLhEZnYXAFxPaNgQ=",
   "Source": "mvc",
   "BasePath": "_content/mvc",
   "Mode": "Default",
@@ -2958,40 +2958,6 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\African_Dishes.jpg",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
-      "BasePath": "_content/mvc",
-      "RelativePath": "uploads/African_Dishes.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\African_Dishes.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\images.jpg",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
-      "BasePath": "_content/mvc",
-      "RelativePath": "uploads/images.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\images.jpg"
-    },
-    {
       "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\person-1.jpg",
       "SourceId": "mvc",
       "SourceType": "Discovered",
@@ -3043,12 +3009,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\person-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\person-4.jpg",
+      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\person-7.jpg",
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
-      "RelativePath": "uploads/person-4.jpg",
+      "RelativePath": "uploads/person-7.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3057,15 +3023,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\person-4.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\person-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-landscape-5.jpg",
+      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-landscape-8.jpg",
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
-      "RelativePath": "uploads/post-landscape-5.jpg",
+      "RelativePath": "uploads/post-landscape-8.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3074,15 +3040,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\post-landscape-5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\post-landscape-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-portrait-4.jpg",
+      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-sq-2.jpg",
       "SourceId": "mvc",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
       "BasePath": "_content/mvc",
-      "RelativePath": "uploads/post-portrait-4.jpg",
+      "RelativePath": "uploads/post-sq-2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3091,58 +3057,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\post-portrait-4.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-sq-1.jpg",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
-      "BasePath": "_content/mvc",
-      "RelativePath": "uploads/post-sq-1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\post-sq-1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-sq-3.jpg",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
-      "BasePath": "_content/mvc",
-      "RelativePath": "uploads/post-sq-3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\post-sq-3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\uploads\\post-sq-5.jpg",
-      "SourceId": "mvc",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\henry.mbamalu\\Documents\\Dotnet_blog_mvc\\wwwroot\\",
-      "BasePath": "_content/mvc",
-      "RelativePath": "uploads/post-sq-5.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\post-sq-5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\post-sq-2.jpg"
     }
   ]
 }

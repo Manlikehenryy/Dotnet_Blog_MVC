@@ -15,4 +15,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 
+# Copy the migration script
+COPY rundb-migrations.sh /app
+RUN chmod +x /app/rundb-migrations.sh
+
+# Set the script as the entry point
 ENTRYPOINT ["dotnet", "mvc.dll"]

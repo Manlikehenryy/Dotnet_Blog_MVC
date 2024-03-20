@@ -28,6 +28,7 @@
   <!-- Template Main CSS Files -->
   <link href="~/assets/css/variables.css" rel="stylesheet">
   <link href="~/assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
   <!-- =======================================================
   * Template Name: ZenBlog
@@ -44,10 +45,10 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>ZenBlog</h1>
+        <h1>MindMingle</h1>
       </a>
 
       <nav id="navbar" class="navbar">
@@ -78,6 +79,7 @@
         </ul>
       </nav><!-- .navbar -->
 
+
       <div class="position-relative">
         <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
         <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
@@ -103,6 +105,7 @@
 
     <div class="container">
         <main role="main" class="pb-3">
+          <partial name = "_Notification"/>
             @RenderBody()
         </main>
     </div>

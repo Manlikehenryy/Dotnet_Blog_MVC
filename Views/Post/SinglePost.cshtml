@@ -10,7 +10,8 @@
             <!-- ======= Single Post Content ======= -->
             <div class="single-post">
               <div class="post-meta"><span class="date">@ViewData["Category"]</span> <span class="mx-1">&bullet;</span> <span>@ViewData["CreatedAt"]</span></div>
-              <h1 class="mb-5">@ViewData["PostTitle"]</h1>
+              <h1 class="mb-2">@ViewData["PostTitle"]</h1>
+              <h6 class="post-meta mb-5">@ViewData["Author"]</h6>
               <p><span class="firstcharacter">L</span>@ViewData["Content"]</p>
 
               <figure class="my-4">

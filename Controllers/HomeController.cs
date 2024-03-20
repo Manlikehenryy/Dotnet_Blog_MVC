@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using mvc.Data;
 using mvc.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace mvc.Controllers;
 
@@ -19,8 +21,8 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         // IEnumerable<Post> Posts = _db.Posts.FromSqlRaw("SELECT * FROM dbo.Posts ORDER BY Id DESC").ToList();
-        IEnumerable<Post> Posts = _db.Posts.FromSqlRaw("SELECT * FROM Posts ORDER BY Id DESC").ToList();
-
+        IEnumerable<Post> Posts = _db.Posts.OrderByDescending(post => post.Id).ToList();
+    
    
 
         return View(Posts);

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using mvc.Data;
 using mvc.Models;
 
+
 namespace mvc.Controllers
 {
     
@@ -36,13 +37,14 @@ namespace mvc.Controllers
             }
 
             // IEnumerable<Comment> Comments = _db.Comments.FromSqlRaw($"SELECT * FROM dbo.Comments WHERE PostId = {Id}").ToList();
-            IEnumerable<Comment> Comments = _db.Comments.FromSqlRaw($"SELECT * FROM Comments WHERE PostId = {Id}").ToList();
+            IEnumerable<Comment> Comments = _db.Comments.Where(comment => comment.PostId == Id).ToList();
 
             ViewData["Category"] = post.Category;
             ViewData["FilePath"] = post.FilePath;
             ViewData["Content"] = post.Content;
             ViewData["PostTitle"] = post.Title;
             ViewData["CreatedAt"] = post.CreatedAt;
+            ViewData["Author"] = post.Author;
             ViewData["PostId"] = post.Id;
             return View(Comments);
         }
@@ -56,10 +58,12 @@ namespace mvc.Controllers
                    PostId = PostId,
                    Author = Author,
                    Comment_ = Comment_,
-                   CreatedAt = DateTime.Now
+                   CreatedAt = DateTime.UtcNow
                 }
             );
             _db.SaveChanges();
+
+            TempData["success"] = "Comment added successfully";
             return RedirectToAction("SinglePost");
         }
         public IActionResult Create()
@@ -76,8 +80,11 @@ namespace mvc.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(string comment,int postid,IFormFile file,Post post)
+        public async Task<IActionResult> Create(IFormFile file,Post post)
         {
+            try
+            {
+
             string UploadsFolder = Path.Combine(_webHost.WebRootPath, "uploads");
 
             if (!Directory.Exists(UploadsFolder))
@@ -97,21 +104,25 @@ namespace mvc.Controllers
              
             
             post.FilePath = $"uploads/{FileName}";
-            post.CreatedAt = DateTime.Now;
+            post.CreatedAt = DateTime.UtcNow;
+            
             _db.Posts.Add(post);
-        
-            // _db.Comments.Add(
-            //     new Comment{
-            //         PostId = postid,
-            //         Author = post.Author,
-            //         Comment_ = comment,
-            //         CreatedAt = DateTime.Now
-            //     }
-            //   );
-
+      
+         
             _db.SaveChanges();
             TempData["success"] = "Post created successfully";
+
             return View();
+
+        
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = "An error occurred while saving the post: " + ex.Message;
+                return View(post); // Assuming you have a view named "Create" for displaying the form
+            }
+            
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

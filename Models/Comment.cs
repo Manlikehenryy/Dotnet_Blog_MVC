@@ -16,6 +16,6 @@ namespace mvc.Models
         [Required]
         public string Comment_ {get; set;}
         public DateTime CreatedAt {get; set;}
-        public DateTime UpdatedAt {get; set;} = DateTime.Now;
+        public DateTime UpdatedAt {get; set;} = DateTime.UtcNow;
     }
 }
